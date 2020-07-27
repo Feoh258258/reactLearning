@@ -19,8 +19,8 @@ code {
 }
 
 .rm {
-  background: red;
-  border-radius: 50%;
+  background: #f94242;
+  border-radius: 25%;
   border: none;
   color: #fff;
 }
@@ -43,8 +43,8 @@ code {
   height: 0;
   margin: 8px;
   box-sizing: border-box;
-  border: 32px solid red;
-  border-color: red transparent red transparent;
+  border: 32px solid #f94242;
+  border-color: #f94242 transparent #f94242 transparent;
   animation: lds-hourglass 1.2s infinite;
 }
 @keyframes lds-hourglass {
@@ -59,4 +59,12 @@ code {
   100% {
     transform: rotate(1800deg);
   }
+}
+
+.addTodoBtn {
+  width: 15%;
+  background: #f94242;
+  border: none;
+  font-size: 17px;
+  outline: none;
 }

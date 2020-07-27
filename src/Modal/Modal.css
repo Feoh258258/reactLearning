@@ -17,3 +17,20 @@
   background: #FFF;
   height: 200px;
 }
+.modal-btn {
+  margin-bottom: .5rem;
+  background: #f94242;
+  border: none;
+  width: 20%;
+  font-size: 17px;
+  outline: none;
+}
+
+.modalInsidaBtn {
+  margin-bottom: .5rem;
+  background: #f94242;
+  border: none;
+  width: 30%;
+  font-size: 17px;
+  outline: none;
+}

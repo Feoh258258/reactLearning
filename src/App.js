@@ -44,11 +44,11 @@ function removeTodo(id) {
   return (
     <Context.Provider value={{ removeTodo }}>
       <div className="wrapper">
-        <h1>React tutorial</h1>
+        <h1>Todo List (React)</h1>
         <Modal />
 
         <React.Suspense fallback={<p>Loading...</p>}>
-        <AddTodo onCreate={addTodo}/>
+          <AddTodo onCreate={addTodo}/>
         </React.Suspense>
         
 
