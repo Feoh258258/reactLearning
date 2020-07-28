@@ -9,10 +9,12 @@ export default class Modal extends React.Component {
     render() {
     return (
       <React.Fragment>
-        <button className='modal-btn' onClick={() => this.setState({ isOpen: true})}>Read Me</button>
+        <div className='row'>
+        <button className='col-md-12 modal-btn' onClick={() => this.setState({ isOpen: true})}>Read Me</button>
+        </div>
 
         {this.state.isOpen && (<div className='modal'>
-        <div className='modal-body'>
+        <div className='modal-body col-md-6'>
         <h1>Info</h1>
         <p>This TodoList has created by Vladlen Minin`s lesson</p>
         <button className="modalInsidaBtn" onClick={() => this.setState({ isOpen: false})}>Close modal</button>

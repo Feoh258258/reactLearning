@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {useEffect} from 'react'
 import TodoList from './Todo/TodoList'
 import Context from './context'
