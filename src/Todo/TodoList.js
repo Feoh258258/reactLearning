@@ -12,8 +12,9 @@ const styles = {
 
 function TodoList(props) {
   return (
+    <div className="container">
     <div class="row">
-    <ul className='col-md-12 col-lg-10' style={styles.ul}>
+    <ul className="col-9 col-md-12 col-lg-10 col-sm-11" style={styles.ul}>
       { props.todos.map((todo, index) =>{
         return <TodoItem 
         todo={todo} 
@@ -24,6 +25,7 @@ function TodoList(props) {
       })}
     </ul> 
     </div>
+   </div>//container 
   )
 }
 

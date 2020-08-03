@@ -10,7 +10,7 @@ export default class Modal extends React.Component {
     return (
       <React.Fragment>
         <div className='row'>
-        <button className='col-md-12 modal-btn' onClick={() => this.setState({ isOpen: true})}>Read Me</button>
+        <button className='col-4 col-md-6 col-sm-6 col-xs-7 modal-btn' onClick={() => this.setState({ isOpen: true})}>Read Me</button>
         </div>
 
         {this.state.isOpen && (<div className='modal'>
