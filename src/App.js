@@ -44,12 +44,13 @@ function removeTodo(id) {
 
   return (
     <Context.Provider value={{ removeTodo }}>
-      <div className="wrapper">
+      
         <h1>Todo List (React)</h1>
         <Modal />
 
         <React.Suspense fallback={<p>Loading...</p>}>
-          <AddTodo onCreate={addTodo}/>
+          <div className="container">
+          <AddTodo onCreate={addTodo}/></div>
         </React.Suspense>
         
 
@@ -57,8 +58,6 @@ function removeTodo(id) {
         {todos.length ? (<TodoList todos={todos} onToggle={toggleTodo} />) :
           loading ? null : (<p>No todos!</p>
         )}
-        
-      </div>
     </Context.Provider>
   );
 }

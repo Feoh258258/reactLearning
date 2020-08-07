@@ -12,12 +12,6 @@ code {
     monospace;
 }
 
-.wrapper {
-  padding-top: 5rem;
-  margin: 0 auto;
-  width: 600px;
-}
-
 .rm {
   background: #f94242;
   border-radius: 25%;
