@@ -7,6 +7,20 @@ import Modal from './Modal/Modal'
 
 const AddTodo = React.lazy(() => import('./Todo/AddTodo'))
 
+class angryMentor extends React.Component{
+	constructor(props) {
+		super(props)
+		this.state = {
+			opened: false
+		}
+	}
+	toggle() {
+		this.setState({
+			opened: !this.state.opened
+		})
+	}
+}
+
 function App() {
   const [todos, setTodos] = React.useState([])
   const [loading, setLoader] = React.useState(true)
