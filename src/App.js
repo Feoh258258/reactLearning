@@ -7,6 +7,20 @@ import Modal from './Modal/Modal'
 
 const AddTodo = React.lazy(() => import('./Todo/AddTodo'))
 
+class angryMentor extends React.Component{
+	constructor(props) {
+		super(props)
+		this.state = {
+			opened: false
+		}
+	}
+	toggle() {
+		this.setState({
+			opened: !this.state.opened
+		})
+	}
+}
+
 function App() {
   const [todos, setTodos] = React.useState([])
   const [loading, setLoader] = React.useState(true)
@@ -44,12 +58,13 @@ function removeTodo(id) {
 
   return (
     <Context.Provider value={{ removeTodo }}>
-      <div className="wrapper">
+      
         <h1>Todo List (React)</h1>
         <Modal />
 
         <React.Suspense fallback={<p>Loading...</p>}>
-          <AddTodo onCreate={addTodo}/>
+          <div className="container">
+          <AddTodo onCreate={addTodo}/></div>
         </React.Suspense>
         
 
@@ -57,8 +72,6 @@ function removeTodo(id) {
         {todos.length ? (<TodoList todos={todos} onToggle={toggleTodo} />) :
           loading ? null : (<p>No todos!</p>
         )}
-        
-      </div>
     </Context.Provider>
   );
 }

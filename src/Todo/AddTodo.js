@@ -28,7 +28,7 @@ const input = useInputValue('')
   }
   return (
     <form className='formAdd' style={{marginBottom: '1rem'}} onSubmit={submitHandler}>
-      <input  {...input.bind} />
+    <input  {...input.bind} />
       <button className='addTodoBtn' type="submit">Add todo</button>
     </form>
   )
